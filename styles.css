@@ -1,14 +1,14 @@
 :root {
   /* Color Palette */
+  --color-light-orange: #f7cbbb;
+  --color-orange: #e76f51;
+  --color-deep-orange: #de411b;
+  --color-purple: #51355a;
 }
 
 * {
   box-sizing: border-box;
   margin: 0px;
-}
-
-body {
-  background-color: var(--color-background-main);
 }
 
 /* None */
