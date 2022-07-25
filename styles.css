@@ -1,0 +1,378 @@
+:root {
+  /* Color Palette */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+body {
+  background-color: var(--color-background-main);
+}
+
+/* None */
+/* Show DOM, and visibility hidden */
+
+/* .containers-parent {
+    margin: 100px auto;
+  }
+  
+  .container-child {
+    height: 150px;
+    width: 150px;
+    border: 5px solid #f7cbbb;
+    text-align: center;
+    display: block;
+    margin: 20px auto;
+  } */
+
+/* Block */
+/* 
+      Default block elements: div, p, h1-h6, main, nav, header, footer, article, aside
+  */
+
+/* .containers-parent {
+    margin: 100px auto;
+  }
+  
+  .container-child {
+    height: 150px;
+    width: 150px;
+    border: 5px solid #f7cbbb;
+    text-align: center;
+    display: block;
+    margin: 20px auto;
+  }
+  
+  .container-child.first-child {
+    padding: 45px;
+    background-color: #e76f51;
+  }
+  
+  .container-child.second-child {
+    padding: 35px;
+    background-color: #de411b;
+  }
+  
+  .container-child.third-child {
+    padding: 25px;
+    background-color: #51355a;
+  } */
+
+/* Inline */
+/* 
+      Default inline elements: span, img, a, button, input. Text Formatting elements: strong, em, b, small, sub, sub
+      Note: An inline element cannot contain a block-level element!
+  */
+
+/* .containers-parent {
+    margin: auto;
+    width: fit-content;
+  }
+  
+  .container-child {
+    display: inline;
+  }
+  .container-child.first-child {
+    padding: 45px;
+    background-color: #e76f51;
+  }
+  .container-child.second-child {
+    padding: 35px;
+    background-color: #de411b;
+  }
+  .container-child.third-child {
+    padding: 25px;
+    background-color: #51355a;
+  } */
+
+/* Add p text to see the overlapping of content */
+
+/* Inline-block */
+
+/* .container-child {
+    height: 150px;
+    width: 150px;
+    border: 5px solid #f7cbbb;
+    margin: auto;
+    text-align: center;
+    display: inline-block;
+    padding: 30px;
+  }
+  .container-child.first-child {
+    background-color: #e76f51;
+  }
+  .container-child.second-child {
+    background-color: #de411b;
+  }
+  .container-child.third-child {
+    background-color: #51355a;
+  } */
+
+/* 
+      Initial - set to default value
+      Inherit - from it's parent
+      Flexbox
+      Grid
+  */
+
+/* Position */
+
+/* Relative */
+/* 
+      access to top, bottom, left, top, z-index
+      div and use top bottom left top to move the div around
+      div child inside div parent  and use relative to move child inside 
+      put padding and margin for the parent div and move the child
+  */
+
+/* .container-child.first-child {
+    height: 150px;
+    width: 150px;
+    border: 5px solid #f7cbbb;
+    text-align: center;
+    display: block;
+    padding: 45px;
+    background-color: #e76f51;
+    position: relative;
+    left: -10px;
+    z-index: 1;
+  }
+  
+  .container-child.second-child {
+    height: 150px;
+    width: 150px;
+    border: 5px solid #f7cbbb;
+    text-align: center;
+    display: block;
+    padding: 45px;
+    background-color: #e76f51;
+    position: relative;
+    right: -20px;
+    bottom: 60px;
+  }
+  
+  .container-child.third-child {
+    height: 150px;
+    width: 150px;
+    border: 5px solid #f7cbbb;
+    text-align: center;
+    display: block;
+    padding: 45px;
+    background-color: #e76f51;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  } */
+
+/* Absolute */
+/* 
+      access to top, bottom, left, top, z-index   
+      use the same example from above and put absolute to child and show what happens
+      put relative on the parent div
+      wrap with another parent and put padding on that and then relative on that and remove it from inner parent
+      also remove relative from all of them and see them default to viewport
+  */
+
+/* .big-wrapper {
+    position: relative;
+  } */
+
+/* .containers-parent {
+    position: relative;
+    margin: 100px;
+    width: 500px;
+    height: 300px;
+  }
+  .container-child.first-child {
+    height: 150px;
+    width: 150px;
+    border: 5px solid #f7cbbb;
+    text-align: center;
+    display: block;
+    padding: 45px;
+    background-color: #e76f51;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+  } */
+
+/* Fixed */
+/* 
+      access to top, bottom, left, top, z-index
+      start with third-child
+      fixed for a nav
+      add lorem1000 to have a scrolling efect and see
+      overalapping content underneath
+  */
+
+/* .container-child.first-child {
+    height: 150px;
+    width: 150px;
+    border: 5px solid #f7cbbb;
+    text-align: center;
+    display: block;
+    padding: 45px;
+    background-color: #e76f51;
+    position: relative;
+    right: 0px;
+    bottom: 0px;
+  }
+  .container-child.second-child {
+    height: 150px;
+    width: 150px;
+    border: 5px solid #f7cbbb;
+    text-align: center;
+    display: block;
+    padding: 45px;
+    background-color: #e76f51;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 10;
+  }
+  .container-child.third-child {
+    height: 150px;
+    width: 150px;
+    border: 5px solid #f7cbbb;
+    text-align: center;
+    display: block;
+    padding: 45px;
+    background-color: #e76f51;
+    position: fixed;
+    top: 0px;
+    left: 50px;
+    z-index: 3;
+  } */
+
+/* Sticky */
+/* 
+      access to top, bottom, left, top, z-index
+      can I use it check
+      sticky fill pollyfill
+      Stickyfill is a polyfill. This means that it implements a feature (sticky positioning in this case) 
+      that already exists in some browsers natively, and allows to use this feature in the browsers that 
+      don't support it yet and older versions of the browsers that didn't 
+      also add lorem 1000 outside containers-parent
+      what an awesome banner it’s so pretty :) big banner then menu sticky
+      new browsers sticky old browsers js or use pollyfills
+      new sticky menu under the sticky menu
+      add div with what a space of time between the menus and see how it behaves
+      also list with header sticky 
+  */
+
+/* .containers-parent {
+    height: 600px;
+  }
+  .container-child.first-child {
+    height: 150px;
+    width: 150px;
+    border: 5px solid #f7cbbb;
+    text-align: center;
+    display: block;
+    padding: 45px;
+    background-color: #e76f51;
+    position: relative;
+    right: 0px;
+    bottom: 0px;
+  }
+  .container-child.second-child {
+    height: 150px;
+    width: 150px;
+    border: 5px solid #f7cbbb;
+    text-align: center;
+    display: block;
+    padding: 45px;
+    background-color: #e76f51;
+    position: relative;
+    right: 0px;
+    bottom: 0px;
+  }
+  .container-child.third-child {
+    height: 150px;
+    width: 150px;
+    border: 5px solid #f7cbbb;
+    text-align: center;
+    display: block;
+    padding: 45px;
+    background-color: #e76f51;
+    position: sticky;
+    top: 0px;
+    left: 50px;
+  } */
+
+/* Inherit */
+/* 
+      might or might not have access to top, bottom, left, top, z-index
+  */
+
+/* List */
+/* 
+      add lorem1000 at the end after list
+  */
+
+/* .list-section {
+    background-color: #e76f51;
+    border: 5px solid #f7cbbb;
+    color: white;
+    padding: 10px;
+  }
+  
+  .section-header {
+    background-color: #de411b;
+    color: white;
+    padding: 10px;
+    position: sticky;
+    top: 0px;
+  }
+  
+  .section-item {
+    padding: 10px;
+  } */
+
+/* Float */
+/* 
+      Put item 3 after the p and show difference, explain
+      move article item 1 and 2 from left to right and show order of the right items (3 2 1)
+  */
+
+.article {
+  border: 5px solid #f7cbbb;
+  overflow: auto;
+}
+
+.article-item {
+  background-color: #e76f51;
+  padding: 10px;
+  width: 33.333%;
+  text-align: center;
+}
+
+.item-1 {
+  height: 600px;
+  float: left;
+}
+
+.item-2 {
+  height: 400px;
+  float: left;
+}
+
+.item-3 {
+  height: 200px;
+  float: right;
+}
+
+.article-title {
+  background-color: #de411b;
+  color: white;
+  padding: 10px;
+}
+
+p {
+  padding: 10px;
+  clear: both;
+}
+
+/* Css layouts, tools like grid and flex box, responsive design */
