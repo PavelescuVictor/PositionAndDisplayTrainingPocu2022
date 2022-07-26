@@ -338,6 +338,7 @@
         - 1 element then text left then right
         - 1 element then another one with text inside and inline display
         - 2 elements with p with text
+        - 3 elements one left one right one left and then p text - show usage of clear
       Put item 3 after the p and show difference, explain
       move article item 1 and 2 from left to right and show order of the right items (3 2 1) 
   */
