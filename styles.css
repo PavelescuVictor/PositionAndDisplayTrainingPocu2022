@@ -333,8 +333,13 @@
 
 /* Float */
 /* 
+      Places element on the left or right side of its container allowing text and inline elements to wrap around it.
+        - 1 element left then right
+        - 1 element then text left then right
+        - 1 element then another one with text inside and inline display
+        - 2 elements with p with text
       Put item 3 after the p and show difference, explain
-      move article item 1 and 2 from left to right and show order of the right items (3 2 1)
+      move article item 1 and 2 from left to right and show order of the right items (3 2 1) 
   */
 
 .article {
